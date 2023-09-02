@@ -21,17 +21,35 @@ The Todo App provides the following features:
 5. **Delete Tasks:**
    - Users can delete a task by clicking a delete button next to the task.
 
-## Getting Started
+### Links
 
-Follow these steps to run the Todo App on your local machine:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/react-todo-app.git
+- Live Site URL: [Live site URL](https://willowy-hotteok-baa110.netlify.app/)
 
 
-Technologies Used
-React.js: A JavaScript library for building user interfaces.
-JavaScript: The programming language used for the app's logic.
-CSS: Styling for the user interface.
-HTML: The structure of the web page.
+
+## Screenshots
+
+![Screenshot 1](screenshots/img1.PNG)
+![Screenshot 2](screenshots/img2.PNG)
+
+
+
+## Technologies Used
+- React.js: A JavaScript library for building user interfaces.
+
+- JavaScript: The programming language used for the app's logic.
+- CSS: Styling for the user interface.
+
+- HTML: The structure of the web page.
+
+
+## Author
+
+- Frontend Mentor - [@Ibrahimali2020](https://www.frontendmentor.io/profile/Ibrahimali2020)
+- Twitter - [@Ibrahim2016egy](https://www.twitter.com/Ibrahim2016egy)
+
+
+
+
+
+

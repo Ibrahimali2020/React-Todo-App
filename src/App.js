@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './index.css';
 
-const todos = [
-  { id: 1, name: 'bransh my teeth', completed: true },
-  { id: 2, name: 'go to the gym', completed: false },
-  { id: 3, name: 'pray and read quran', completed: false },
-  { id: 4, name: 'learning programming', completed: false },
-  { id: 5, name: 'take a shower', completed: true },]
+// const todos = [
+//   { id: 1, name: 'bransh my teeth', completed: true },
+//   { id: 2, name: 'go to the gym', completed: false },
+//   { id: 3, name: 'pray and read quran', completed: false },
+//   { id: 4, name: 'learning programming', completed: false },
+//   { id: 5, name: 'take a shower', completed: true },]
 
 export default function App() {
   return <div className='container'>
@@ -24,7 +24,7 @@ function Header() {
 
 
 function Main() {
-  const [tasks, setTasks] = useState(todos)
+  const [tasks, setTasks] = useState([])
   const [taskName, setTaskName] = useState('')
   const [links, setLinks] = useState('All')
   let curTasks;
