@@ -22,7 +22,6 @@ The Todo App provides the following features:
    - Users can delete a task by clicking a delete button next to the task.
 
 ### Links
-
 - Live Site URL: [Live site URL](https://willowy-hotteok-baa110.netlify.app/)
 
 

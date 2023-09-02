@@ -94,6 +94,7 @@ p {
 
 p.completed {
   text-decoration: line-through;
+  color: hsl(234, 11%, 52%);
 }
 /* input[type="checkbox"].completed  {
   
