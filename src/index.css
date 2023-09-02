@@ -136,6 +136,10 @@ footer  {
   cursor: pointer;
 }
 
+.links div:hover {
+  color: hsl(236, 33%, 92%);
+}
+
 .clearCompleted {
   cursor: pointer;
 }

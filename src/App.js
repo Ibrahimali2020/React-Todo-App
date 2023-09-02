@@ -48,17 +48,24 @@ function Main() {
     setTasks(tasks => tasks.map(task => task.id === id ? { ...task, completed: !task.completed } : task))
   }
 
+  function clearCompleted() {
+    setTasks(tasks => tasks.filter(task => task.completed === false))
+  }
+
   return <main>
     <Form taskName={taskName}
       setTaskName={setTaskName}
       onAddTask={addTask} />
+
     <TodoList tasks={curTasks} setTasks={setTasks}
       onDeleteTask={deleteTask}
       onToggleCompleted={toggleCompleted} />
+
     {tasks.length <= 0 ? <WelcomeMessage /> :
       <Footer itemLeft={itemLeft}
         links={links}
-        setLinks={setLinks} />}
+        setLinks={setLinks}
+        onClearCompleted={clearCompleted} />}
 
   </main >
 }
@@ -104,7 +111,7 @@ function Task({ task, onDeleteTask, onToggleCompleted }) {
   </li>
 }
 
-function Footer({ itemLeft, links, setLinks }) {
+function Footer({ itemLeft, links, setLinks, onClearCompleted }) {
   return <footer className="footer box">
     <div className="items-left">
       {itemLeft} items left
@@ -114,7 +121,7 @@ function Footer({ itemLeft, links, setLinks }) {
       <div onClick={() => setLinks('Active')} className={(links === 'Active') ? 'active' : ''}>Active</div>
       <div onClick={() => setLinks('Completed')} className={(links === 'Completed') ? 'active' : ''}>Completed</div>
     </div>
-    <div className="clearCompleted">Clear Completed</div>
+    <div className="clearCompleted" onClick={onClearCompleted}>Clear Completed</div>
   </footer >
 }
 
