@@ -22,7 +22,7 @@ The Todo App provides the following features:
    - Users can delete a task by clicking a delete button next to the task.
 
 ### Links
-- Live Site URL: [Live site URL](https://todoapp-reactjs-app.netlify.app/)
+- Live Site URL: [Live site URL](https://todoapp-reactjs-app.netlify.app)
 
 
 
